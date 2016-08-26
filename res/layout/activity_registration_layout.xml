@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/registerHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:text="REGISTARTION"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:background="@android:color/holo_red_dark"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/registerHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" 
+        android:layout_margin="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                   <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/editText_FirstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="First Name" 
+                        android:includeFontPadding="true"
+                    	flatui:fieldStyle="box"
+                    	flatui:theme="@array/blood" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                   <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/editText_LastName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:hint="Last Name"
+                        android:inputType="textPersonName" 
+                        android:includeFontPadding="true"
+                    	flatui:fieldStyle="box"
+                    	flatui:theme="@array/blood" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                   <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/editText_MyPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip" 
+                        android:layout_weight="1"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:includeFontPadding="true"
+                    	flatui:fieldStyle="box"
+                    	flatui:theme="@array/blood" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                   <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/editText_MobileNumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:hint="Mobile Number"
+                        android:inputType="number" 
+                        android:includeFontPadding="true"
+                    	flatui:fieldStyle="box"
+                    	flatui:theme="@array/blood" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                   <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/editText_EmailId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Email Id" 
+                        android:includeFontPadding="true"
+                    	flatui:fieldStyle="box"
+                    	flatui:theme="@array/blood" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                   <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/editText_DOB"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:layout_weight="20"
+                        android:cursorVisible="false" 
+        				android:focusable="false" 
+        				android:focusableInTouchMode="false"
+                        android:hint="Date Of Birth" 
+                        android:includeFontPadding="true"
+                        android:gravity="center"
+                    	flatui:fieldStyle="box"
+                    	flatui:theme="@array/blood" />
+
+                    <Button
+                        android:id="@+id/button_DatePicker"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/ic_action_go_to_today"
+                        android:layout_weight="70"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                   <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/editText_Country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:clickable="true" 
+        				android:cursorVisible="false" 
+        				android:focusable="false" 
+        				android:focusableInTouchMode="false"
+                        android:ems="10"
+                        android:hint="Country" 
+                        android:includeFontPadding="true"
+                    	flatui:fieldStyle="box"
+                    	flatui:theme="@array/blood" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                   <com.cengalabs.flatui.views.FlatEditText
+                        android:id="@+id/editText_City"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dip"
+                        android:layout_weight="1"
+                        android:clickable="true" 
+        				android:cursorVisible="false" 
+        				android:focusable="false" 
+        				android:focusableInTouchMode="false"
+                        android:ems="10"
+                        android:hint="City" 
+                        android:includeFontPadding="true"
+                    	flatui:fieldStyle="box"
+                    	flatui:theme="@array/blood" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <Spinner
+                        android:id="@+id/spinner_BloodGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/blood_groups"
+                        android:layout_weight="60"
+                        android:layout_margin="5dip"
+                        android:padding="5dip"/>
+                    
+                     <Spinner
+                        android:id="@+id/spinner_Status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/donation_status"
+                        android:layout_weight="30" 
+                        android:layout_margin="5dip"
+                        android:padding="5dip"/>
+                     
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dip" 
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:background="@android:color/holo_red_dark" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.cengalabs.flatui.views.FlatButton
+                        android:id="@+id/button_Register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="Register" 
+                        android:layout_margin="5dp"
+                        flatui:theme="@array/sky"/>
+
+                    <com.cengalabs.flatui.views.FlatButton
+                        android:id="@+id/button_Cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel" 
+                        android:layout_margin="5dp"
+                        android:layout_weight="50"
+                        flatui:theme="@array/sky"/>
+
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

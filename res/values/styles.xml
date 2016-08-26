@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Donorstyle" parent="@style/Theme.Sherlock.Light">
+        <item name="actionBarItemBackground">@drawable/selectable_background_donorstyle</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Donorstyle</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Donorstyle</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Donorstyle</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Donorstyle</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Donorstyle</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Donorstyle</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_donorstyle</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_donorstyle</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Donorstyle</item>
+		<item name="android:tabWidgetStyle">@style/Your.TabWidget</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItem.DropDownItem</item>
+    </style>
+
+    <style name="ActionBar.Solid.Donorstyle" parent="@style/Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="background">@drawable/ab_solid_donorstyle</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_donorstyle</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_donorstyle</item>
+        <item name="progressBarStyle">@style/ProgressBar.Donorstyle</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Title.DonorStyle</item>
+        <item name="titleTextStyle">@style/ActionBar.Title.DonorStyle</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Donorstyle" parent="@style/Widget.Sherlock.Light.ActionBar">
+        <item name="background">@drawable/ab_transparent_donorstyle</item>
+        <item name="progressBarStyle">@style/ProgressBar.Donorstyle</item>
+       
+    </style>
+	
+     <style name="PopupMenu.Donorstyle" parent="@style/Widget.Sherlock.Light.ListPopupWindow">	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_donorstyle</item>	
+    </style>
+	
+    <style name="DropDownListView.Donorstyle" parent="@style/Widget.Sherlock.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_donorstyle</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Donorstyle" parent="@style/Widget.Sherlock.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_donorstyle</item>
+    </style> 
+    
+    <style name="Your.TabWidget" parent="@android:style/Widget.Holo.TabWidget">
+    	<item name="*android:tabLayout">@layout/tab_layout</item>
+	</style>
+    
+    <style name="ActionBarTabStyle.Donorstyle" parent="@style/Widget.Sherlock.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_donorstyle</item>
+    </style>
+    
+    <style name="ActionBarTabStyle.Donorstyle" parent="@style/Widget.Sherlock.Light.ActionBar.TabText">
+        <item name="android:background">@drawable/tab_indicator_ab_donorstyle</item>
+    </style>
+	
+    <style name="DropDownNav.Donorstyle" parent="@style/Widget.Sherlock.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_donorstyle</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_donorstyle</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_donorstyle</item>
+    </style>
+    
+    <style name="ProgressBar.Donorstyle" parent="@style/Widget.Sherlock.Light.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_donorstyle</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Donorstyle" parent="@style/Widget.Sherlock.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_donorstyle</item>
+    </style>
+    
+    <style name="ActionBar.Title.DonorStyle" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white2</item>
+        <item name="android:shadowColor">#4ccfff</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">serif</item>
+    </style>
+    
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Donorstyle.Widget" parent="@style/Theme.Sherlock">
+        <item name="popupMenuStyle">@style/PopupMenu.Donorstyle</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Donorstyle</item>
+    </style>
+    
+    <style name="SpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+    	<item name="android:textColor">@android:color/holo_red_dark</item>
+    	<item name="android:textStyle">bold</item>
+    	<item name="android:gravity">center</item>
+	</style>
+	
+    <style name="SpinnerItem.DropDownItem" parent="@android:style/Widget.Holo.Light.DropDownItem.Spinner">
+    	<item name="android:textColor">@android:color/holo_red_dark</item>
+    	<item name="android:textStyle">bold</item>
+    	<item name="android:gravity">center</item>
+	</style>
+
+
+</resources>

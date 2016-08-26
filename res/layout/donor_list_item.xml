@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/card_bg_r4">
+    
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@color/dark_primary" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+			
+            <com.cengalabs.flatui.views.FlatTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donor Details :"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:textColor="@color/white1"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_action_person" />
+
+            <com.cengalabs.flatui.views.FlatTextView
+                android:id="@+id/textView_dFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="1dip"
+                android:textColor="@color/list_background"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical">
+            
+             <ImageView
+                android:id="@+id/imageView_DBloodGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/abs__ab_bottom_solid_inverse_holo" />
+
+            <com.cengalabs.flatui.views.FlatTextView
+                android:id="@+id/textView_dBloodGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/list_background"/>
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical">
+            
+             <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:src="@drawable/abs__ab_bottom_solid_inverse_holo" />
+
+            <com.cengalabs.flatui.views.FlatTextView
+                android:id="@+id/textView_dAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/list_background"/>
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical">
+            
+             <ImageView
+                android:id="@+id/imageView_MyContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_call" />
+
+            <com.cengalabs.flatui.views.FlatTextView
+                android:id="@+id/textView_dContactNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/list_background"/>
+            
+        </TableRow>
+		
+        
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical">
+            
+             <ImageView
+                android:id="@+id/imageView_Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_action_new_email" />
+
+            <com.cengalabs.flatui.views.FlatTextView
+                android:id="@+id/textView_dEmailId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/list_background"/>
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical">
+            
+             <ImageView
+                android:id="@+id/imageView_Location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_place" />
+
+            <com.cengalabs.flatui.views.FlatTextView
+                android:id="@+id/textView_dCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dip"
+                android:layout_weight="1"
+                android:textColor="@color/list_background"/>
+            
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

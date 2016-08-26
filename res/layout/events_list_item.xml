@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_bg_r4" >
+    
+     <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@color/dark_primary" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+			
+            <com.cengalabs.flatui.views.FlatTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Champ On"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:layout_weight="1"
+                android:layout_margin="2dip"
+                flatui:textColor="main"
+                flatui:theme="@array/snow"/>
+            
+            <com.cengalabs.flatui.views.FlatTextView
+                android:id="@+id/textView_EventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                flatui:textColor="main"
+                flatui:theme="@array/snow"/>
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical">
+            
+             <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.cengalabs.flatui.views.FlatTextView
+                android:id="@+id/textView_EventDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:gravity="center_horizontal"
+                flatui:textColor="main"
+                android:textStyle="italic"
+                flatui:theme="@array/dark" />
+            
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imageView_VenueDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_action_place" />
+
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Venue :"
+                android:textColor="@color/list_background"/>
+
+        </TableRow>
+
+        
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical">
+            
+             <ImageView
+                android:id="@+id/imageView_Ve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.cengalabs.flatui.views.FlatTextView
+                android:id="@+id/textView_VenueDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                flatui:textColor="main"
+                flatui:theme="@array/dark"/>
+            
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical">
+            
+             <ImageView
+                android:id="@+id/imageView_ContactDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_action_call" />
+
+            <com.cengalabs.flatui.views.FlatTextView
+                android:id="@+id/textView_ContactDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                flatui:textColor="main"
+                flatui:theme="@array/dark"/>
+            
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>

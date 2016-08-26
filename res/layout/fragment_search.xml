@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/mainLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="100"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_bloodGroupSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="80" 
+                android:entries="@array/blood_groups"/>
+
+            <Button
+                android:id="@+id/button_Search"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:background="@drawable/ic_action_search"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.cengalabs.flatui.views.FlatEditText
+                android:id="@+id/editText_country_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:clickable="true" 
+        		android:cursorVisible="false" 
+        		android:focusable="false" 
+        		android:focusableInTouchMode="false"
+                android:hint="Country"
+                android:ems="10" 
+               	android:includeFontPadding="true"
+                flatui:fieldStyle="box"
+                flatui:theme="@array/blood"/>
+
+            <com.cengalabs.flatui.views.FlatEditText
+                android:id="@+id/editText_city_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:layout_weight="1"
+                android:clickable="true" 
+        		android:cursorVisible="false" 
+        		android:focusable="false" 
+        		android:focusableInTouchMode="false"
+                android:hint="City"
+                android:ems="10" 
+                android:includeFontPadding="true"
+                flatui:fieldStyle="box"
+               	flatui:theme="@array/blood"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.costum.android.widget.LoadMoreListView
+        android:id="@+id/listView_BloodDonors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainLinearLayout" 
+        android:dividerHeight="5dip"
+        android:divider="@null"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
